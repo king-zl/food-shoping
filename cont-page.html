@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!--<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<style>
+    .memu { display: none; }
+    .memu.open { display: block; }
+</style>
+<body>
+<!--header-->
+<header class="top-header">
+    <a href="javascript:history.go(-1);" class="page-back"
+       style="position: absolute; top: 14px; left: 14px; margin: 0;"></a>
+    <h1 class="seach-box">
+        <span class="icon-search"></span>
+        <input type="text" value="请输入店铺名称"/>
+        <a href="#" class="search-btn">搜索</a>
+    </h1>
+</header>
+<div style="height:44px;"></div>
+<div class="cont-page-top" style="background-image: url('images/temp/cont-page1.png')">
+    <h2>百盛太阳宫店</h2>
+    <p><span class="icon-location sty2"></span>七圣中街12号院1号楼</p>
+    <p><span class="icon-time sty2"></span>am 09:00-pm 22:00</p>
+    <p class="ta-r">
+        <span class="store-up">
+            <a href="#" class="icon-hert"></a><span>收藏</span>
+        </span>
+    </p>
+</div>
+<ul class="categoryLiIcon">
+    <li>
+        <a href="shop-list-food.html">
+            <img width="39" height="50" src="images/icon-cont-page.png">
+            <em>餐饮</em>
+        </a>
+    </li>
+    <li>
+        <a href="shop-list.html">
+            <img width="39" height="50" src="images/icon-cont-page2.png">
+            <em>服装</em>
+        </a>
+    </li>
+    <li>
+        <a href="in-construction.html">
+            <img width="39" height="50" src="images/icon-cont-page3.png">
+            <em>休闲娱乐</em>
+        </a>
+    </li>
+    <li>
+        <a href="in-construction.html">
+            <img width="39" height="50" src="images/icon-cont-page4.png">
+            <em>商场地图</em>
+        </a>
+    </li>
+    <li>
+        <a href="queue-number.html">
+            <img width="39" height="50" src="images/icon-cont-page5.png">
+            <em>领队排号</em>
+        </a>
+    </li>
+</ul>
+<dl class="tab_proList">
+    <dd class="" style="margin: 0;">
+        <div class="drop-down-warp">
+            <p data-toggle="dropdown" data-target="#yyy"><span class="span-text">全部分类</span><span class="icon-arrow-down"></span></p>
+            <p data-toggle="dropdown" data-target="#ddd"><span class="span-text">楼层</span><span class="icon-arrow-down"></span></p>
+        </div>
+        <ul class="memu" id="yyy">
+            <li>男士穿搭</li>
+            <li>323213</li>
+        </ul>
+        <ul class="memu" id="ddd">
+            <li>1F</li>
+            <li>2F</li>
+            <li>3F</li>
+            <li>4F</li>
+            <li>5F</li>
+        </ul>
+        <div class="commodity-box" style="margin-bottom: 0;">
+            <ul class="shop-floor big-ver">
+                <li class="" style="position: relative;" onclick="location.href='index-dress.html'">
+                    <p class="top-box ta-r clearfix">
+                        <img class="fl" src="" alt="">
+                        <span>3F</span>
+                    </p>
+                    <div class="text-box">
+                        <p>Mikasa 专卖店</p>
+                        <p>男士穿搭</p>
+                        <p class="giving-information">买一赠一</p>
+                    </div>
+                </li>
+                <li class="" style="position: relative;"onclick="location.href='index-dress.html'">
+                    <p class="top-box ta-r clearfix">
+                        <img class="fl" src="" alt="">
+                        <span>3F</span>
+                    </p>
+                    <div class="text-box">
+                        <p>Mikasa 专卖店</p>
+                        <p>男士穿搭</p>
+                        <p class="giving-information">买一赠一</p>
+                    </div>
+                </li>
+                <li class="" style="position: relative;"onclick="location.href='index-dress.html'">
+                    <p class="top-box ta-r clearfix">
+                        <img class="fl" src="" alt="">
+                        <span>3F</span>
+                    </p>
+                    <div class="text-box">
+                        <p>Mikasa 专卖店</p>
+                        <p>男士穿搭</p>
+                        <p class="giving-information">买一赠一</p>
+                    </div>
+                </li>
+                <li class="" style="position: relative;" onclick="location.href='index-dress.html'">
+                    <p class="top-box ta-r clearfix">
+                        <img class="fl" src="" alt="">
+                        <span>3F</span>
+                    </p>
+                    <div class="text-box">
+                        <p>Mikasa 专卖店</p>
+                        <p>男士穿搭</p>
+                        <p class="giving-information">买一赠一</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </dd>
+
+</dl>
+
+<div class="load-text ta-c" style="background: inherit; padding-top: 5px; padding-bottom: 5px;">
+    - 市西宝 -
+</div>
+
+<script>
+
+$(".drop-down-warp p").on("click",function(){
+    var liindex = $(".drop-down-warp p").index(this);
+    $(".drop-down-warp p").removeClass("active");
+    $(this).toggleClass("active");
+//    $(".memu").eq(liindex).fadeIn(150).siblings(".memu").hide();
+});
+$(".memu li").on("click",function(){
+//    $(this).parent(".memu").hide();
+    var myLiText = $(this).html();
+//        alert(myLiText);
+
+    var aaa = $(".drop-down-warp p.active .span-text").text(myLiText);
+//        alert()
+
+});
+$(".store-up").on("click",function(){
+    $(this).toggleClass("active");
+})
+
+</script>
+
+</body>
+</html>

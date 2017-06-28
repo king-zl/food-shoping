@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!--<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            var mySwiper = new Swiper('#slide', {
+                autoplay: 5000,
+                visibilityFullFit: true,
+                loop: true,
+                pagination: '.pagination'
+            });
+            //product list:Tab
+            $(".tab_proList dd").eq(0).show().siblings(".tab_proList dd").hide();
+            $(".tab_proList dt a").eq(0).addClass("currStyle");
+            $(".tab_proList dt a").click(function () {
+                var liindex = $(".tab_proList dt a").index(this);
+                $(this).addClass("currStyle").siblings().removeClass("currStyle");
+                $(".tab_proList dd").eq(liindex).fadeIn(150).siblings(".tab_proList dd").hide();
+            });
+        });
+    </script>
+</head>
+<style>
+    .memu { display: none; }
+    .memu.open { display: block; }
+</style>
+<body>
+<!--header-->
+<header class="top-header">
+    <a href="javascript:history.go(-1);" class="page-back" style="position: absolute; top: 14px; left: 14px; margin: 0;"></a>
+    <h1 class="seach-box" onclick="location.href='search-goods.html';">
+        <span class="icon-search"></span>
+        <input class="mtb1" type="text" value="搜索尖货">
+    </h1>
+</header>
+<div style="height:44px;"></div>
+<!--slide-->
+<div class="commodity-box gooe-top-box">
+    <div class="good-goods-title"><span>Top</span><span class="badge">20</span>咖啡一周热卖</div>
+    <a href="details-page.html"><img src="images/temp/good-pic.png" height="204" alt=""></a>
+    <div class="gooe-top-price">
+        <div class="price-tip">
+            <p>TOP</p>
+            <p>1</p>
+        </div>
+        <p class="fz-16">coffee，pls拿铁咖啡</p>
+        <p class="c-red fz-16">71.1 <span style="font-size: 12px;">元/份</span></p>
+    </div>
+</div>
+
+<div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+    <div class="swiper-wrapper commodity-show good-goods-show">
+        <div class="swiper-slide swiper-slide-active">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide swiper-slide-next">
+            <a href="details-page.html" class="two-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+</div>
+
+<div class="commodity-box gooe-top-box mt10">
+    <div class="good-goods-title"><span>Top</span><span class="badge">20</span>咖啡一周热卖</div>
+    <a href="details-page.html"><img src="images/temp/good-pic.png" height="204" alt=""></a>
+    <div class="gooe-top-price">
+        <div class="price-tip">
+            <p>TOP</p>
+            <p>1</p>
+        </div>
+        <p class="fz-16">coffee，pls拿铁咖啡</p>
+        <p class="c-red fz-16">71.1 <span style="font-size: 12px;">元/份</span></p>
+    </div>
+</div>
+<div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+    <div class="swiper-wrapper commodity-show good-goods-show">
+        <div class="swiper-slide swiper-slide-active">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide swiper-slide-next">
+            <a href="details-page.html" class="two-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/good-pic3.png" alt=""/>
+                </div>
+                <div class="price-tip-sty2 clearfix">
+                    <span>TOP</span><span>1</span>
+
+                </div>
+                <p class="c-block">印度尼西亚 芝士</p>
+                <p  class="c-red">46元／份</p>
+            </a>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+</div>
+
+<div class="commodity-box gooe-top-box mt10" style="margin-bottom: 0;">
+    <div class="good-goods-title"><span>Top</span><span class="badge">20</span>咖啡一周热卖</div>
+    <div class="bg-white mb10 bd-t">
+        <div class="no-page-box">
+            <img src="images/food-no-page1.png" style="width: 107px;" alt="">
+            <p class="fz-16 c-gray">暂无商品</p>
+        </div>
+    </div>
+    <div class="bg-white bd-t">
+        <div class="no-page-box">
+            <img src="images/food-no-page1.png" style="width: 107px;" alt="">
+            <p class="fz-16 c-gray">暂无商品</p>
+        </div>
+    </div>
+</div>
+<div class="load-text ta-c" style="background: inherit; padding-top: 5px;">
+    - 市西宝 -
+</div>
+<div style="height:66px;"></div>
+<nav>
+    <a href="index.html" class="icon-one-page-1"><span></span>
+        <p>商圈</p></a>
+    <a href="tip-goods.html" class="icon-one-page-2 active"><span></span>
+        <p>尖货</p></a>
+    <a href="in-construction.html" class="icon-one-page-3"><span></span>
+        <p>摇一摇</p></a>
+    <a href="city-services.html" class="icon-one-page-4"><span></span>
+        <p>城市服务</p></a>
+    <a href="mine.html" class="icon-one-page-5 "><span></span>
+        <p>我的</p></a>
+</nav>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 2.6,
+        paginationClickable: true,
+        spaceBetween: 3,
+//        slidesOffsetAfter : 100,
+        freeMode: true
+    });
+</script>
+
+</body>
+</html>

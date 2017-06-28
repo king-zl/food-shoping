@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/font-s.js"></script>
+    <script>
+        $(document).ready(function () {
+            var mySwiper = new Swiper('#slide', {
+                autoplay: 5000,
+                visibilityFullFit: true,
+                loop: true,
+                pagination: '.pagination'
+            });
+        });
+    </script>
+</head>
+<style type="text/css">
+    .top-box-banner {
+        background-image: url("images/index-banner.png");
+    }
+</style>
+<body>
+<!--header-->
+<!--<header>-->
+    <!--<a href="javascript:history.go(-1);" class="page-back"></a>-->
+    <!--<a href="#" class="icon-hert"></a>-->
+<!--</header>-->
+<div class="top-box-banner">
+    <a href="javascript:history.go(-1);" class="page-back"></a>
+    <p class="ta-r">
+        <span class="store-up">
+            <a href="#" class="icon-hert"></a><span>收藏</span>
+        </span>
+    </p>
+    <!--<img src="images/index-banner.png" alt="" />-->
+</div>
+
+<div class="contact-way clearfix">
+    <div class="one-box"><img src="images/logo.png" alt=""/></div>
+    <div class="two-box">
+        <p class="text-1">Alexander McQueen</p>
+
+        <p class="text-2"><span class="icon-location"></span>七圣中街12号院1号楼</p>
+
+        <p class="text-2"><span class="icon-time"></span>am 09:00-pm 22:00</p>
+    </div>
+    <div class="tre-box"><a type="pone" href="tel:132456"><img src="images/icon-phone.png" alt=""/></a></div>
+</div>
+<div class="cont-nav">
+    <a href="all-commod.html" class="one-box">
+        <p><span class="nav-icon-nav"></span></p>
+        <p>全部商品</p>
+    </a>
+    <a href="pick-week.html" class="two-box">
+        <p><span class="nav-icon-nav2"></span></p>
+        <p>推荐</p>
+    </a>
+    <a href="discount.html" class="tre-box">
+        <p><span class="nav-icon-nav3"></span></p>
+        <p>折扣</p>
+    </a>
+
+</div>
+<div class="bg-white mt10 mb10">
+    <div class="no-page-box">
+        <img src="images/food-no-page1.png" style="width: 107px;" alt="">
+        <p class="fz-16 c-gray">暂时没有上新啦</p>
+    </div>
+</div>
+<div id="slide" class="swiper-container-horizontal">
+    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1125px, 0px, 0px);">
+        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;">
+            <a href="#">
+                <img src="images/temp/god-shop.png">
+            </a>
+        </div>
+        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 375px;">
+            <a href="#">
+                <img src="upload/slide002.jpg">
+            </a>
+        </div>
+        <!--<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0"-->
+             <!--style="width: 375px;">-->
+            <!--<a href="#">-->
+                <!--<img src="upload/slide001.jpg">-->
+            <!--</a>-->
+        <!--</div>-->
+    </div>
+    <div class="pagination">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+        <span class="swiper-pagination-bullet"></span>
+    </div>
+</div>
+
+<h2 class="h2-title-box">
+    上新
+</h2>
+<!--<div class="bg-white mt10 mb10">-->
+    <!--<div class="no-page-box">-->
+        <!--<img src="images/food-no-page1.png" style="width: 107px;" alt="">-->
+        <!--<p class="fz-16 c-gray">暂时没有上新啦</p>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="swiper-container swiper-container-horizontal swiper-container-free-mode">
+    <div class="swiper-wrapper commodity-show">
+        <div class="swiper-slide swiper-slide-active">
+            <a href="details-page.html" class="one-box">
+                <div class="pic-box">
+                    <img src="images/temp/commodity-pic1.png" alt=""/>
+                </div>
+                <p>毛呢外套</p>
+                <p>¥:128.00</p>
+            </a>
+        </div>
+        <div class="swiper-slide swiper-slide-next">
+            <a href="details-page.html" class="two-box">
+                <div class="pic-box">
+                    <img src="images/temp/commodity-pic2.png" alt=""/>
+                </div>
+                <p>毛呢外套</p>
+                <p>¥:128.00</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="tre-box">
+                <div class="pic-box">
+                    <img src="images/temp/commodity-pic3.png" alt=""/>
+                </div>
+                <p>毛呢外套</p>
+                <p>¥:128.00</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="tre-box">
+                <div class="pic-box">
+                    <img src="images/temp/commodity-pic3.png" alt=""/>
+                </div>
+                <p>毛呢外套</p>
+                <p>¥:128.00</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="tre-box">
+                <div class="pic-box">
+                    <img src="images/temp/commodity-pic3.png" alt=""/>
+                </div>
+                <p>毛呢外套</p>
+                <p>¥:128.00</p>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html" class="tre-box">
+                <div class="pic-box">
+                    <img src="images/temp/commodity-pic3.png" alt=""/>
+                </div>
+                <p>毛呢外套</p>
+                <p>¥:128.00</p>
+            </a>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+</div>
+<h2 class="h2-title-box">
+    尖货大牌爆款
+</h2>
+<div class="bg-white mt10 mb10">
+    <div class="no-page-box">
+        <img src="images/food-no-page1.png" style="width: 107px;" alt="">
+        <p class="fz-16 c-gray">暂时没有上新啦</p>
+    </div>
+</div>
+<a class="banner-box-a" href="">
+    <div class="pric">
+        <p class="text-1">上衣 ： 毛呢外套</p>
+        <p class="text-2">¥:128.00</p>
+    </div>
+    <img src="images/index-1.png" alt=""/>
+</a>
+<a class="banner-box-a" href="">
+    <div class="pric">
+        <p class="text-1">上衣 ： 毛呢外套</p>
+        <p class="text-2">¥:128.00</p>
+    </div>
+    <img src="images/index-1.png" alt=""/></a>
+
+<div class="load-text">
+    商品已加载完
+</div>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 3,
+        freeMode: true
+    });
+    $(".store-up").on("click",function(){
+        $(this).toggleClass("active");
+    })
+
+</script>
+</body>
+</html>

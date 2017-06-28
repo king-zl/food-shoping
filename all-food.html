@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!--<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body style="background:white;">
+<!--header-->
+<header class="top-header box-canel">
+    <a href="javascript:history.go(-1);" class="page-back"
+       style="position: absolute; top: 14px; left: 14px; margin: 0;"></a>
+    <h1 class="seach-box">
+        <span class="icon-search"></span>
+        <input type="text" value="搜索店内商品"/>
+        <a href="#" class="search-btn">搜索</a>
+    </h1>
+    <!--<a class="btn-search-cancel">取消</a>-->
+</header>
+<div style="height:44px;"></div>
+<!--category list-->
+<!--模板不变，异步处理，链接传参数，静态写过于累赘-->
+<div class="clothing-details">
+    <aside class="class_tree">
+        <ul id="tab">
+            <li class="current_style">
+                <a>
+                    <strong>特价</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>推荐</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>热门</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>凉菜</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>蔬菜</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>海鲜</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>禽类</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>豆类</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>底料</strong>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <strong>肉类</strong>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!--category content-->
+
+    <div class="category_cont">
+        <h2 class="h2-title-box">特价（12）</h2>
+        <ul class="food-list-cont">
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="category_cont none">
+        <h2 class="h2-title-box">推荐（12）</h2>
+        <ul class="food-list-cont">
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="category_cont none">
+        <h2 class="h2-title-box">热门（12）</h2>
+        <ul class="food-list-cont">
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="category_cont none">
+        <h2 class="h2-title-box">凉菜（12）</h2>
+        <ul class="food-list-cont">
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="category_cont none">
+        <h2 class="h2-title-box">蔬菜（12）</h2>
+        <ul class="food-list-cont">
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+            <li class="clearfix">
+                <img src="images/temp/food-pic-1.png" alt=""/>
+                <p class="fz-16">腊肠</p>
+                <p><span class="c-block fz-14 c-gray">月售：280份</span></p>
+                <p class="c-red fz-14 clearfix">￥32.0/份</p>
+            </li>
+
+        </ul>
+    </div>
+    <div class="category_cont none">
+        <div class="no-page-box" style="padding-top: 45%;">
+            <img src="images/food-no-page1.png" alt="">
+            <p class="fz-16 c-gray">暂无商品</p>
+        </div>
+    </div>
+    <div class="category_cont none">
+        <div class="no-page-box" style="padding-top: 45%;">
+            <img src="images/food-no-page1.png" alt="">
+            <p class="fz-16 c-gray">暂无商品</p>
+        </div>
+    </div>
+    <div class="category_cont none">
+        <div class="no-page-box" style="padding-top: 45%;">
+            <img src="images/food-no-page1.png" alt="">
+            <p class="fz-16 c-gray">暂无商品</p>
+        </div>
+    </div>
+    <div class="category_cont none">
+        <div class="no-page-box" style="padding-top: 45%;">
+            <img src="images/food-no-page1.png" alt="">
+            <p class="fz-16 c-gray">暂无商品</p>
+        </div>
+    </div>
+    <div class="category_cont none">
+        <div class="no-page-box" style="padding-top: 45%;">
+            <img src="images/food-no-page1.png" alt="">
+            <p class="fz-16 c-gray">暂无商品</p>
+        </div>
+    </div>
+</div>
+
+<style>
+   .modal-backdrop{
+       z-index: 1;;
+   }
+   .modal {
+       padding-left: 30px;
+       top: 0px;
+       left: inherit;
+        right: -2px;
+   }
+    .modal-dialog {
+        /*height: 100%;*/
+        margin: 0;;
+        left: inherit;
+        z-index: 22;
+
+    }
+   .modal-content {
+       /*height: 100%;*/
+       background: #fff;
+       border-radius: inherit;
+   }
+   .modal-body {
+       /*height: 100%;*/
+   }
+</style>
+<!--<div class="mY"style="width: 200px; height: 100%;background-color: #fff;position: absolute; left: 0;top: 0; opacity: .6;">-->
+
+</div>
+<div id="myModal" class="modal modal-filter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>-->
+                <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <h3 class="h3-title">价格区间（元）</h3>
+                <!--<p>-->
+                    <!--<input type="text"/><span>-</span><input type="text"/>-->
+                <!--</p>-->
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <label class="sr-only">Password</label>
+                        <input class="form-control" maxlength="8" style="width: 100px;" placeholder="最低价">
+                        <span class="space-line"></span>
+                        <input class="form-control" maxlength="8" style="width: 100px;" placeholder="最高价">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Password</label>
+
+                    </div>
+                </form>
+                <h3 class="h3-title">品牌</h3>
+                <div class="brand-box">
+                    <span class="">乐町</span>
+                    <span class="">乐町</span>
+                    <span class="">乐町</span>
+                    <span class="">乐町</span>
+                    <span class="">乐町</span>
+                    <span class="">乐町</span>
+                </div>
+                <h3 class="h3-title mt0">分类</h3>
+                <div class="brand-box">
+                    <span class="">全部运动户外</span>
+                    <span class="">运动上衣</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
+                <!--<button type="button" class="btn btn-primary">确定</button>-->
+                <a href="#" data-dismiss="modal">关闭</a>
+                <a class="rr-btn" style="background-color: #dfdfdf;">重置</a>
+                <a href="#">确定</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<script>
+    //tab切换
+    $(function () {
+        window.onload = function () {
+//    alert('111');
+            var $li = $('#tab li');
+            var $ul = $('.category_cont');
+            $li.click(function () {
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('current_style');
+                $ul.css('display', 'none');
+                $ul.eq($t).css('display', 'block');
+            });
+            $(".condition-filter span").not(".btn-filter").on("click",function(){
+//                $(this).toggleClass("active");
+
+                if($(this).hasClass("active")){
+                    $(this).removeClass("active");
+                    $(this).addClass("activeTwo");
+                }
+                else if($(this).hasClass("")){
+                    $(this).addClass("active");
+                }
+                else if($(this).hasClass("activeTwo")){
+                    $(this).removeClass("activeTwo");
+                }
+                $(this).siblings("span").removeClass();
+            })
+        }
+    });
+</script>
+<script>
+    var bh = $("html").height();
+    $("#myModal .modal-content").css("height",bh);
+//    alert(bh);
+
+    $(".brand-box span").on("click",function(){
+        $(this).toggleClass("active");
+    });
+    $(".modal-footer .rr-btn").on("click",function(){
+        if($(".brand-box span").has("active")){
+            $(".brand-box span").removeClass("active")
+        }
+        $(".form-group input").val("");
+
+    })
+</script>
+</body>
+</html>

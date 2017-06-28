@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+</head>
+<body style="background: #fff;">
+
+<header class="top-header">
+    <a href="javascript:history.go(-1);" class="page-back"
+       style="position: absolute; top: 14px; left: 14px; margin: 0;"></a>
+    <h1>绑定手机号码</h1>
+</header>
+<div style="height: 44px;"></div>
+<div class="bind-box">
+    <h3 class="title" style="font-size: 12px; ">我门已给你的手机号码15234326769发送了一条验证码短信。</h3>
+    <p class="bind-input-box">
+        <input type="text" maxlength="11" style="font-size: 16px; width: 60%; max-width: inherit;" placeholder="请输入短信验证码" />
+        <input class="btn-re-send" value="重新发送(60)" onclick="settime(this)">
+    </p>
+    <a href="binding-suc.html" class="btn-red">下一步</a>
+</div>
+
+
+<script type="text/javascript">
+    var countdown=59;
+    function settime(obj) {
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            obj.value="重新发送(60)";
+            countdown = 59;
+            return;
+        } else {
+            obj.setAttribute("disabled", true);
+            obj.value="重新发送(" + countdown + ")";
+            countdown--;
+        }
+        setTimeout(function(){settime(obj) },1000)
+    }
+
+</script>
+</body>
+</html>

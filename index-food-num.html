@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<style type="text/css">
+    .top-box-banner {
+        background-image: url("images/index-banner.png");
+    }
+    .commodity-show a.one-box {
+        height: auto;
+        padding-bottom: 40px;
+    }
+</style>
+<body>
+<!--header-->
+<!--<header>-->
+    <!--<a href="javascript:history.go(-1);" class="page-back"></a>-->
+    <!--<a href="#" class="icon-hert"></a>-->
+<!--</header>-->
+<div class="top-box-banner">
+    <a href="javascript:history.go(-1);" class="page-back"></a>
+    <p class="ta-r">
+        <span class="store-up">
+            <a href="#" class="icon-hert"></a><span>收藏</span>
+        </span>
+    </p>
+    <!--<img src="images/index-banner.png" alt="" />-->
+</div>
+
+<div class="contact-way clearfix" style="margin-bottom: 0;">
+    <div class="one-box"><img src="images/logo.png" alt=""/></div>
+    <div class="two-box">
+        <p class="text-1">那家小馆</p>
+
+        <p class="text-2"><span class="icon-location"></span>七圣中街12号院1号楼</p>
+
+        <p class="text-2"><span class="icon-time"></span>am 09:00-pm 22:00</p>
+    </div>
+    <div class="tre-box sty2"><a href="tel:1831133333"><img width="51" height="30" src="images/icon-phone.png" alt=""/></a></div>
+</div>
+<ul class="take-num-list">
+    <li class="title-box">
+        <p>餐桌类型</p>
+        <p>等待桌数</p>
+        <p>预计等待</p>
+    </li>
+    <li>
+        <p>小桌
+            <span class="text-1">1-4人</span>
+        </p>
+        <p><span class="c-red">4</span>桌</p>
+        <p class="c-red">>30分钟</p>
+    </li>
+    <li>
+        <p>小桌
+            <span class="text-1">1-4人</span>
+        </p>
+        <p><span class="c-red">4</span>桌</p>
+        <p class="c-red">>30分钟</p>
+    </li>
+    <li class="range-box">
+        <p><span>当前距离 <span class="c-red">3.0km</span></span>
+            <span class="text-1">限制距离 <span class="c-red">20.0km</span></span>
+        </p>
+        <p class="c-red">
+            <span class="btn-c-red" data-toggle="modal" data-target="#myModal">立即取号</span>
+        </p>
+    </li>
+    <li class="li-text"><p class="c-red">*过号请重新取号，谢谢配合</p></li>
+
+</ul>
+
+<!--<div class="load-text">-->
+    <!--商品已加载完-->
+<!--</div>-->
+
+
+<div id="myModal" class="modal fade select-number" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog" style="top: 160px; padding: 0 20px;">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="">选择人数</p>
+                <input type="text" value="如：21人"/>
+            </div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal">取消</a>
+                <a href="queue-number-details.html">确定</a>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<script>
+    $(".store-up").on("click",function(){
+        $(this).toggleClass("active");
+    })
+
+</script>
+</body>
+</html>

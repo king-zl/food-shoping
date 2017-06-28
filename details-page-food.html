@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!--<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <script src="js/jquery.js"></script>
+</head>
+<style>
+    .gooe-top-price {
+        padding-left: 20px;
+    }
+</style>
+<body class="bg-white">
+
+<!--header-->
+<header class="top-header" style="display: block;">
+    <a href="javascript:history.go(-1);" class="page-back" style="position: absolute; top: 14px; left: 14px; margin: 0;"></a>
+    <h1>菜品详情</h1>
+</header>
+<div style="height:44px;"></div>
+<!--slide-->
+<div class="details-food-page">
+    <div class="commodity-box gooe-top-box">
+        <img src="images/temp/food-details-pic.png" height="315" alt="">
+        <div class="gooe-top-price pos-r">
+            <p class="fz-16">阳朗鸡</p>
+            <p class="c-red fz-16">¥ 75 <span class="c-gray fz-12">起</span></p>
+            <span class="rebate-box fr">招牌</span>
+        </div>
+    </div>
+    <ul class="food-profile">
+        <li>商品简介</li>
+        <li>香、辣、糯、请吃火锅的朋友一定要吃干锅。此商品不含菜饭。
+            温馨提示：图片仅供参考，请以实物为准。</li>
+
+    </ul>
+</div>
+
+<script>
+    $.ajax({
+        type: 'GET',
+        url: "https://api.douban.com/v2/movie/new_movies",
+        async: false,
+        dataType: 'jsonp',
+        data: '',
+        timeout: 1000,
+        cache: false,
+        error: errFunction,
+        success: succFunction
+
+    });
+    function succFunction (data){
+        $(function(){
+            console.log(data.status+data.message);
+            var json = eval(data);
+            console.log(json);
+        })
+
+    }
+    function errFunction(jqXHR){
+        $(function(){
+            if (jqXHR.status==403) {
+                console.log("403")
+            }else if(jqXHR.status==404) {
+                console.log("404")
+            }
+        })
+    }
+</script>
+</body>
+</html>

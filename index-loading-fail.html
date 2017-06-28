@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!--<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            var mySwiper = new Swiper('#slide', {
+                autoplay: 5000,
+                visibilityFullFit: true,
+                loop: true,
+                pagination: '.pagination'
+            });
+            //product list:Tab
+            $(".tab_proList dd.tab-box-one").eq(0).show().siblings(".tab_proList dd.tab-box-one").hide();
+            $(".tab_proList dt a").eq(0).addClass("currStyle");
+            $(".tab_proList dt a").click(function () {
+                var liindex = $(".tab_proList dt a").index(this);
+                $(this).addClass("currStyle").siblings().removeClass("currStyle");
+                $(".tab_proList dd.tab-box-one").eq(liindex).fadeIn(150).siblings(".tab_proList dd.tab-box-one").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<!--header-->
+<header class="top-header">
+    <!--<a href="location.html" class="location">贵阳</a>-->
+    <h1 class="seach-box" style="margin-left: 8%; width: 72%;">
+        <span class="icon-search"></span>
+        <input type="text" value="请输入商场名或商场名称"/>
+    </h1>
+    <a href="" class="icon-message"></a>
+</header>
+<div style="height:44px;"></div>
+<!--slide-->
+<div id="slide">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="details-page.html">
+                <img src="images/temp/shop-f.png"/>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="details-page.html">
+                <img src="images/temp/shop-f.png"/>
+            </a>
+        </div>
+    </div>
+    <div class="pagination"></div>
+</div>
+<!--<div class="special-offers">-->
+    <!--<img src="images/icon-special-offers.png" alt=""/>-->
+    <!--<span class="text-1">附近优惠</span>-->
+    <!--<span>MUJI：消费满500元赠送价值200元短裙一件</span>-->
+<!--</div>-->
+<div style="height: 10px;"></div>
+<dl class="tab_proList">
+    <dt>
+        <a><span class="">商场</span></a>
+        <a><span>品牌</span></a>
+    </dt>
+    <dd class="tab-box-one" style="margin: 0;">
+        <div class="drop-down-warp nav-tabs">
+            <p class="active"><span class="span-text">活动优先</span></p>
+            <p><span class="span-text">人气优先</span></p>
+        </div>
+        <dl class="tab_proList2">
+            <dd>
+                <div class="commodity-box">
+                    <a href="cont-page.html">
+                        <img src="images/temp/commodity-box-pic2.png" alt=""/>
+                        <p class="one-box clearfix">
+                            <span class="fl">滨河步行街</span>
+                        </p>
+                        <p class="two-box">
+                            <span><img src="images/icon-commodity-box.png" alt="" style="width: inherit;"/>2个品牌券</span>
+                            <span style="margin-left: 10px;"><img src="images/icon-commodity-box2.png" alt="" style="width: inherit;"/>54个品牌优惠中</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="space-line-gary"></div>
+                <div class="commodity-box">
+                    <a href="cont-page.html">
+                        <img src="images/temp/commodity-box-pic.png" alt=""/>
+                        <p class="one-box clearfix">
+                            <span class="fl">滨河步行街</span>
+                        </p>
+                        <p class="two-box">
+                            <span><img src="images/icon-commodity-box.png" alt="" style="width: inherit;"/>2个品牌券</span>
+                            <span style="margin-left: 10px;"><img src="images/icon-commodity-box2.png" alt="" style="width: inherit;"/>54个品牌优惠中</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="space-line-gary"></div>
+                <div class="commodity-box">
+                    <a href="cont-page.html">
+                        <img src="images/temp/commodity-box-pic.png" alt=""/>
+                        <p class="one-box clearfix">
+                            <span class="fl">滨河步行街</span>
+                        </p>
+                        <p class="two-box">
+                            <span><img src="images/icon-commodity-box.png" alt="" style="width: inherit;"/>2个品牌券</span>
+                            <span style="margin-left: 10px;"><img src="images/icon-commodity-box2.png" alt="" style="width: inherit;"/>54个品牌优惠中</span>
+                        </p>
+                    </a>
+                </div>
+            </dd>
+            <dd style="display: none">
+                <div class="commodity-box">
+                    <a href="cont-page.html">
+                        <img src="images/temp/commodity-box-pic2.png" alt=""/>
+                        <p class="one-box clearfix">
+                            <span class="fl">滨河步行街1</span>
+                        </p>
+                        <p class="two-box">
+                            <span><span class="icon-hert-red mr5"></span>323人收藏</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="space-line-gary"></div>
+                <div class="commodity-box">
+                    <a href="cont-page.html">
+                        <img src="images/temp/commodity-box-pic.png" alt=""/>
+                        <p class="one-box clearfix">
+                            <span class="fl">滨河步行街</span>
+                        </p>
+                        <p class="two-box">
+                            <span><span class="icon-hert-red mr5"></span>323人收藏</span>
+                        </p>
+                    </a>
+                </div>
+                <div class="space-line-gary"></div>
+                <div class="commodity-box">
+                    <a href="cont-page.html">
+                        <img src="images/temp/commodity-box-pic.png" alt=""/>
+                        <p class="one-box clearfix">
+                            <span class="fl">滨河步行街</span>
+                        </p>
+                        <p class="two-box">
+                            <span><span class="icon-hert-red mr5"></span>323人收藏</span>
+                        </p>
+                    </a>
+                </div>
+            </dd>
+        </dl>
+    </dd>
+    <dd class="tab-box-one" style="margin: 0;">
+        <div class="drop-down-warp" >
+            <p class="active"><span class="span-text">智能排序</span></p>
+            <p><span class="span-text">人气优先</span></p>
+            <p><span class="span-text">折扣优先</span></p>
+        </div>
+        <dl class="tab_proList2">
+            <dd>
+                <ul class="food-list-cont">
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span> <span class="mr10">323人收藏</span><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span> <span class="mr10">323人收藏</span><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span> <span class="mr10">323人收藏</span><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span> <span class="mr10">323人收藏</span><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span> <span class="mr10">323人收藏</span><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span> <span class="mr10">323人收藏</span><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span> <span class="mr10">323人收藏</span><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                </ul>
+            </dd>
+            <dd style="display: none">
+                <ul class="food-list-cont">
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span>323人收藏</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span>323人收藏</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span>323人收藏</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span>323人收藏</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span>323人收藏</p>
+                    </li>
+                    <li class="clearfix">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-hert-red mr5"></span>323人收藏</p>
+                    </li>
+                </ul>
+            </dd>
+            <dd style="display: none">
+                <ul class="food-list-cont">
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix" onclick="location.href = 'index-dress.html'">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                    <li class="clearfix">
+                        <img src="images/temp/nike-bg.png" alt="">
+                        <p class="fz-16 pt0">Mikasa 专卖店</p>
+                        <p><span class="c-block fz-14 c-gray">烧烤</span></p>
+                        <p class="fz-12 c-gray clearfix"><span class="icon-discount"></span>3折优惠</p>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+
+    </dd>
+</dl>
+
+<div class="loading-fail">
+
+</div>
+<div style="height:66px;"></div>
+<nav>
+    <a href="index.html" class="icon-one-page-1 active"><span></span>
+        <p>商圈</p></a>
+    <a href="tip-goods.html" class="icon-one-page-2"><span></span>
+        <p>尖货</p></a>
+    <a href="" class="icon-one-page-3"><span></span>
+        <p>摇一摇</p></a>
+    <a href="" class="icon-one-page-4"><span></span>
+        <p>城市服务</p></a>
+    <a href="mine.html" class="icon-one-page-5"><span></span>
+        <p>我的</p></a>
+</nav>
+<script>
+
+
+$(".drop-down-warp p").on("click",function(){
+    var liindex2 = $(".drop-down-warp p").index(this);
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".tab_proList2 dd").eq(liindex2).fadeIn(150).siblings(".tab_proList2 dd").hide();
+});
+
+</script>
+
+</body>
+</html>

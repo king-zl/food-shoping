@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>服装美食城</title>
+    <meta name="keywords" content="KEYWORDS..."/>
+    <meta name="description" content="DESCRIPTION..."/>
+    <meta name="author" content="DeathGhost"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <!--<link rel="icon" href="images/icon/favicon.ico" type="image/x-icon">-->
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my-style.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+</head>
+
+<body>
+<!--header-->
+<header class="top-header" style="display: block;">
+    <a href="javascript:history.go(-1);" class="page-back" style="position: absolute; top: 14px; left: 14px; margin: 0;"></a>
+    <h1>系统消息</h1>
+    <!--<a href="lease-record.html" class="btn-search-cancel">记录</a>-->
+</header>
+<div style="height:44px;"></div>
+
+<div class="sys-message-center">
+    <p class="ta-c title">2016年8月10日10:30</p>
+    <div class="message-box">
+        <span class="message-arrow"></span>
+        <h3>市西宝</h3>
+        <p>您有8积分到账？13积分就能兑换好货，天天精彩不用抢</p>
+    </div>
+    <p class="ta-c title">2016年8月10日10:30</p>
+    <div class="message-box">
+        <span class="message-arrow"></span>
+        <h3>市西宝</h3>
+        <p>您有8积分到账？13积分就能兑换好货，天天精彩不用抢</p>
+    </div>
+
+</div>
+<div class="no-page-box" style="padding-top: 45%;">
+    <img src="images/message-page-no.png" alt="">
+    <p class="fz-16 c-gray">暂无积分</p>
+</div>
+<div style="height:66px;"></div>
+<nav>
+    <a href="index.html" class="icon-one-page-1"><span></span>
+        <p>商圈</p></a>
+    <a href="tip-goods.html" class="icon-one-page-2"><span></span>
+        <p>尖货</p></a>
+    <a href="" class="icon-one-page-3"><span></span>
+        <p>摇一摇</p></a>
+    <a href="" class="icon-one-page-4"><span></span>
+        <p>城市服务</p></a>
+    <a href="mine.html" class="icon-one-page-5 active"><span></span>
+        <p>我的</p></a>
+</nav>
+
+<script>
+    $(".shop-floor li span").on("click",function(){
+        if($(this).hasClass("btn-take-num")){
+            $(this).removeClass("btn-take-num");
+            $(this).addClass("btn-take-num-act");
+            $(this).text("领取");
+        }
+        else if($(this).hasClass("btn-take-num-act")){
+            $(this).removeClass("btn-take-num-act");
+            $(this).addClass("btn-take-num");
+            $(this).text("取消");
+        }
+//        $(this).siblings("span").removeClass();
+    })
+</script>
+</body>
+</html>
